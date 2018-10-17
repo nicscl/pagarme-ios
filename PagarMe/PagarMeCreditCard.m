@@ -80,7 +80,7 @@
         NSString *publicKey = [responseObject objectForKey:@"public_key"];
         NSString *cardHashString = [self cardHashString];
         
-        NSString *encryptedString = [RSA encryptString:cardHashString publicKey:publicKey];
+        NSString *encryptedString = [RSA_pagarme encryptString:cardHashString publicKey:publicKey];
         
         _callbackBlock(nil, [NSString stringWithFormat:@"%@_%@", _id, encryptedString]);
         
