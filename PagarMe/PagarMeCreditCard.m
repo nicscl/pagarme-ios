@@ -11,7 +11,7 @@
 #import "PagarMeCreditCard.h"
 #import "PagarMe.h"
 #import "Luhn.h"
-#import "RSA.h"
+#import "RSA_pagarme.h"
 
 @interface PagarMeCreditCard ()
 
